@@ -2,22 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=10.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call Mork Now</title>
     <style>
-        .widget-container {
+        /* Style the body to ensure proper centering */
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 1000vh;
+            height: 100vh;
             background-color: #222;
+            margin: 0;
+        }
+
+        /* Style the button */
+        .mork-button {
+            background-color: #ff5733;
+            color: white;
+            font-size: 32px; /* Bigger text */
+            padding: 25px 50px; /* Bigger button */
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        /* Hover effect */
+        .mork-button:hover {
+            background-color: #e64a19;
+            transform: scale(1.1); /* Slight zoom effect */
         }
     </style>
 </head>
 <body>
-    <div class="widget-container">
-        <elevenlabs-convai agent-id="FqTjY97DBjXoDJEtnVbT"></elevenlabs-convai>
-        <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
-    </div>
+    <button class="mork-button" onclick="window.open('https://elevenlabs.io/app/talk-to?agent_id=FqTjY97DBjXoDJEtnVbT', '_blank')">
+        🚀 Call Mork Now 🚀
+    </button>
 </body>
 </html>
