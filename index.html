@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call Mork Now</title>
     <style>
-        /* Style the body to ensure proper centering */
+        /* Fullscreen centered layout */
         body {
             display: flex;
             justify-content: center;
@@ -14,30 +14,26 @@
             background-color: #222;
             margin: 0;
         }
-
-        /* Style the button */
-        .mork-button {
-            background-color: #ff5733;
-            color: white;
-            font-size: 32px; /* Bigger text */
-            padding: 25px 50px; /* Bigger button */
-            border: none;
+        
+        /* Make the widget container larger */
+        .widget-container {
+            width: 80%;
+            max-width: 600px;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
             border-radius: 15px;
-            cursor: pointer;
+            padding: 20px;
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease, background-color 0.2s ease;
-        }
-
-        /* Hover effect */
-        .mork-button:hover {
-            background-color: #e64a19;
-            transform: scale(1.1); /* Slight zoom effect */
         }
     </style>
 </head>
 <body>
-    <button class="mork-button" onclick="window.open('https://elevenlabs.io/app/talk-to?agent_id=FqTjY97DBjXoDJEtnVbT', '_blank')">
-        🚀 Call Mork Now 🚀
-    </button>
+    <div class="widget-container">
+        <elevenlabs-convai agent-id="FqTjY97DBjXoDJEtnVbT"></elevenlabs-convai>
+        <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+    </div>
 </body>
 </html>
