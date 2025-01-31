@@ -1,1 +1,40 @@
-<iframe src="https://elevenlabs.io/app/talk-to?agent_id=FqTjY97DBjXoDJEtnVbT" width="100%" height="100%" style="border: none;"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Mork Now</title>
+    <style>
+        /* Centering the button */
+        .mork-button {
+            position: fixed;
+            bottom: 50%; /* Moves it towards the middle */
+            left: 50%;
+            transform: translate(-50%, 50%); /* Centers it exactly */
+            background-color: #ff5733; /* Adjust color */
+            color: white;
+            font-size: 24px; /* Make text bigger */
+            padding: 20px 40px; /* Make button bigger */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .mork-button:hover {
+            background-color: #e64a19; /* Darker hover color */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="mork-button" onclick="openMork()">Call Mork Now</button>
+
+    <script>
+        function openMork() {
+            window.location.href = "https://elevenlabs.io/app/talk-to?agent_id=FqTjY97DBjXoDJEtnVbT";
+        }
+    </script>
+
+</body>
+</html>
